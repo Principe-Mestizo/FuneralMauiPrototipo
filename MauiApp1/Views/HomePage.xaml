@@ -1,0 +1,391 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.HomePage"
+             Title="HomePage">
+
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!-- Contenido de la página -->
+            <StackLayout Grid.Row="0" Padding="30, 0" Spacing="25" BackgroundColor="#1A1E1A">
+                <Image Source="logo.png" />
+
+            </StackLayout>
+            <!-- Encabezado -->
+            <StackLayout Grid.Row="1" Orientation="Vertical"   >
+
+                <!-- Barra de navegación -->
+                <StackLayout Orientation="Vertical" HorizontalOptions="Fill" BackgroundColor="#1A1E1A">
+                    <Button Text="Inicio" Margin="0,0,0,10" BackgroundColor="#1A1E1A"/>
+                    <Button Text="Sobre Nosotros" Margin="0,0,0,10" BackgroundColor="#1A1E1A"/>
+                    <Button Text="Servicios" Margin="0,0,0,10" BackgroundColor="#1A1E1A" />
+                    <Button Text="Galería" Margin="0,0,0,10" BackgroundColor="#1A1E1A" />
+                    <Button Text="Equipo" Margin="0,0,0,10" BackgroundColor="#1A1E1A" />
+                    <Button Text="Contáctanos" Margin="0,0,0,10" BackgroundColor="#1A1E1A" />
+
+
+                </StackLayout>
+                <Grid BackgroundColor="#FFFFFF">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <!-- Imagen de fondo -->
+                    <Image Source="imagen_1.jpg" Aspect="AspectFill" Grid.RowSpan="2" />
+
+                    <!-- Contenedor de texto -->
+                    <StackLayout Grid.Row="1" Padding="20" VerticalOptions="Center" >
+                        <Label Text="Nuestro apoyo en los momentos difíciles." TextColor="White" FontSize="14" Margin="0,0,0,10" FontAttributes="Bold"  TextTransform="Uppercase"/>
+                        <Label Text="Le brindamos todo nuestro apoyo en estos momentos tan difíciles. Con una llamada le atenderemos, las 24 horas, los 365 días." TextColor="White" FontSize="16" />
+                    </StackLayout>
+
+
+                </Grid>
+
+
+
+                <!--SECTION NUEVA-->
+                <StackLayout BackgroundColor="#052D43" Padding="20">
+                    <!-- Primer servicio -->
+                    <StackLayout Orientation="Vertical">
+                        <Grid>
+                            <!-- Columna para la imagen -->
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Imagen -->
+                            <Image Source="certificado.png" HeightRequest="40" WidthRequest="40" Grid.Column="0" VerticalOptions="Center" />
+
+                            <!-- Label -->
+                            <Label Grid.Column="1" Text="Certificación médica" TextColor="White" FontSize="17" Margin="10,5,0,10"/>
+                        </Grid>
+
+                        <!-- Descripción -->
+                        <Label TextColor="White" Text="Un profesional de la salud visitará la dirección que indique con el objetivo de realizar la certificación médica del fallecido e iniciar los trámites funerarios." />
+                    </StackLayout>
+
+
+                    <!-- Segundo servicio -->
+
+                    <StackLayout Orientation="Vertical">
+                        <Grid>
+                            <!-- Columna para la imagen -->
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Imagen -->
+                            <Image Source="certificado.png" HeightRequest="40" WidthRequest="40" Grid.Column="0" VerticalOptions="Center" />
+
+                            <!-- Label -->
+                            <Label Grid.Column="1" Text="Contrato a domicilio" TextColor="White" FontSize="17" Margin="10,5,0,10"/>
+                        </Grid>
+
+                        <!-- Descripción -->
+                        <Label TextColor="White" Text="Acercaremos el contrato hasta tu ubicación al momento de hacer el retiro en la carroza fúnebre." />
+                    </StackLayout>
+
+
+
+
+                    <!-- Tercer servicio -->
+                    <StackLayout Orientation="Vertical">
+                        <Grid>
+                            <!-- Columna para la imagen -->
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Imagen -->
+                            <Image Source="certificado.png" HeightRequest="40" WidthRequest="40" Grid.Column="0" VerticalOptions="Center" />
+
+                            <!-- Label -->
+                            <Label Grid.Column="1" Text="Asesoría Legal" TextColor="White" FontSize="17" Margin="10,5,0,10"/>
+                        </Grid>
+
+                        <!-- Descripción -->
+                        <Label TextColor="White" Text="Puede que tenga muchas inquietudes o no conozca por donde empezar. Llámenos, estamos telefónicamente las 24 horas, los 7 días de la semana." />
+                    </StackLayout>
+
+
+                </StackLayout>
+                
+                <!--ABOUT MISION Y VISION-->
+                <ScrollView BackgroundColor="#ffffff">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+             
+
+                        <!-- Sección "about" -->
+                        <StackLayout Grid.Row="1" Padding="20">
+                            <Label Text="SOMOS FUNERALS" FontSize="20" FontAttributes="Bold" TextColor="#000000" HorizontalTextAlignment="Center" />
+                            <Label Text="En el adiós a un ser querido necesitas más que una palabra cálida. Necesitas que la experiencia te acompañe en cada decisión y en cada fase del proceso. Necesitas que te escuchen y te hablen con transparencia desde una mentalidad abierta. En algunos momentos buscas algo más que una mano tendida. Buscas que entiendan lo que necesitas y que se anticipen con la mejor de las soluciones. Buscas sentirte comprendido. Buscas que te cuiden, te apoyen y te sostengan. Quieres poder confiar y no preocuparte de nada. Adelante. Somos Mémora y estamos contigo."
+                   TextColor="#000000" />
+
+                            <StackLayout Orientation="Vertical" Margin="0,20,0,0">
+                                <!-- Primera columna -->
+                                <StackLayout>
+                                    <Image Source="imagen_1.jpg" />
+                                    <Label Text="Nuestra misión" FontSize="17" FontAttributes="Bold" TextColor="#000000" HorizontalTextAlignment="Center" />
+                                    <Label Text="Nos dedicamos a proporcionar servicios funerarios personalizados y dignos que honren la vida y el legado de los seres queridos. Nos esforzamos por ser una fuente de consuelo y apoyo para las familias durante su duelo, ofreciendo atención profesional y compasiva en cada paso del camino."
+                           TextColor="#000000" />
+                                </StackLayout>
+
+                                <!-- Segunda columna -->
+                                <StackLayout >
+                                    <Image Source="imagen_1.jpg"  />
+                                    <Label Text="Nuestro plan" FontSize="17" FontAttributes="Bold" TextColor="#000000" HorizontalTextAlignment="Center" />
+                                    <Label Text="Encontrarás una amplia gama de planes y servicios diseñados para brindar apoyo y comodidad en momentos difíciles. Desde la pre-planificación de arreglos funerarios hasta servicios conmemorativos personalizados, estamos aquí para acompañarte en cada paso del camino."
+                           TextColor="#000000" />
+                                </StackLayout>
+
+                                <!-- Tercera columna -->
+                                <StackLayout >
+                                    <Image Source="imagen_1.jpg"  />
+                                    <Label Text="Nuestra visión" FontSize="17" FontAttributes="Bold" TextColor="#000000" HorizontalTextAlignment="Center"  />
+                                    <Label Text="Nos esforzamos por ser reconocidos como líderes en la industria funeraria, yendo más allá de las expectativas convencionales al ofrecer servicios de alta calidad y apoyo compasivo a las familias en sus momentos de pérdida."
+                           TextColor="#000000" />
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </ScrollView>
+                
+                <!--SERVICIOS-->
+                
+                <ScrollView>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                    
+                        <!-- Sección de servicios -->
+                        <StackLayout Grid.Row="1" Padding="20">
+                            <Label HorizontalTextAlignment="Center" Text="Explore Nuestros Servicios Funerarios" FontSize="20" FontAttributes="Bold" TextColor="#000000" />
+                            <Label Text="Ofrecemos una gama respetuosa e integral de servicios para honrar a sus seres queridos y apoyarlo durante este momento difícil." FontSize="16" TextColor="#000000" />
+
+                            <StackLayout Padding="0,20,0,0">
+                                <!-- Servicio 1 -->
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+                                    <ImageButton Source="certificado.png" HeightRequest="40" WidthRequest="40" />
+                                    <Button WidthRequest="290" Text="Servicio 1" FontSize="17" TextColor="#000000" VerticalOptions="CenterAndExpand" BackgroundColor="#FFFFFF" BorderColor="#000000" BorderWidth="1" />
+                                </StackLayout>
+
+                                <!-- Servicio 2 -->
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+                                    <ImageButton Source="certificado.png" HeightRequest="40" WidthRequest="40" />
+                                    <Button WidthRequest="290" Text="Servicio 2" FontSize="17" TextColor="#000000" VerticalOptions="CenterAndExpand" BackgroundColor="#FFFFFF" BorderColor="#000000" BorderWidth="1" />
+                                </StackLayout>
+
+                                <!-- Servicio 3 -->
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+                                    <ImageButton Source="certificado.png" HeightRequest="40" WidthRequest="40" />
+                                    <Button WidthRequest="290" Text="Servicio 3" FontSize="17" TextColor="#000000" VerticalOptions="CenterAndExpand" BackgroundColor="#FFFFFF" BorderColor="#000000" BorderWidth="1" />
+                                </StackLayout>
+
+                                <!-- Servicio 4 -->
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+                                    <ImageButton Source="certificado.png" HeightRequest="40" WidthRequest="40" />
+                                    <Button WidthRequest="290" Text="Servicio 4" FontSize="17" TextColor="#000000" VerticalOptions="CenterAndExpand" BackgroundColor="#FFFFFF" BorderColor="#000000" BorderWidth="1" />
+                                </StackLayout>
+
+                                <!-- Servicio 5 -->
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+                                    <ImageButton Source="certificado.png" HeightRequest="40" WidthRequest="40" />
+                                    <Button WidthRequest="290" Text="Servicio 5" FontSize="17" TextColor="#000000" VerticalOptions="CenterAndExpand" BackgroundColor="#FFFFFF" BorderColor="#000000" BorderWidth="1" />
+                                </StackLayout>
+
+                                <!-- Servicio 6 -->
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+                                    <ImageButton Source="certificado.png" HeightRequest="40" WidthRequest="40" />
+                                    <Button WidthRequest="290" Text="Servicio 6" FontSize="17" TextColor="#000000" VerticalOptions="CenterAndExpand" BackgroundColor="#FFFFFF" BorderColor="#000000" BorderWidth="1" />
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </ScrollView>
+                
+                <!--GALERIA IMAGENES-->
+                <ScrollView>
+                    <StackLayout>
+                        <Label Text="Galería de Imágenes" HorizontalOptions="CenterAndExpand" Margin="10" FontSize="20" FontAttributes="Bold" />
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <!-- Galería de imágenes -->
+                            <StackLayout Grid.Row="0" Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                    <Image Source="imagen_1.jpg"  Margin="10" />
+                                    <Label Text="Servicio 1" HorizontalOptions="Center" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                    <Image Source="imagen_1.jpg"  Margin="10" />
+                                    <Label Text="Servicio 2" HorizontalOptions="Center" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                    <Image Source="imagen_1.jpg"  Margin="10" />
+                                    <Label Text="Servicio 3" HorizontalOptions="Center" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                    <Image Source="imagen_1.jpg"  Margin="10" />
+                                    <Label Text="Servicio 4" HorizontalOptions="Center" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                    <Image Source="imagen_1.jpg"  Margin="10" />
+                                    <Label Text="Servicio 5" HorizontalOptions="Center" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                    <Image Source="imagen_1.jpg"  Margin="10" />
+                                    <Label Text="Servicio 6" HorizontalOptions="Center" Margin="0, 0, 0 , 10"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+                    
+                <!--COntacto-->
+                <ScrollView>
+                    <StackLayout BackgroundColor="#F7F7F7">
+                        <StackLayout Padding="15">
+                            <Label Text="Contáctenos" TextColor="#999999" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+                            <Label Text="¿Tienes alguna duda? Escríbenos y déjanos tu mensaje. Nos pondremos en contacto." TextColor="#999999" FontSize="14" HorizontalOptions="Center" Margin="0,10,0,20" />
+                            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                                <!-- Imagen de horario -->
+                                <Image Source="certificado.png" HeightRequest="40" WidthRequest="40" Margin="0,0,10,0" />
+
+                                <!-- Información de horario -->
+                                <StackLayout>
+                                    <Label Text="Horario" TextColor="#999999" FontSize="20" TextTransform="Uppercase" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                                    <Label Text="Lunes a Viernes: 9:00 a.m. a 5:00 p.m." TextColor="#999999" FontSize="14" />
+                                    <Label Text="Sábado, Domingo y Feriado: 8:00 a.m. a 5:00 p.m." TextColor="#999999" FontSize="14" />
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                                <!-- Imagen de teléfono -->
+                                <Image Source="certificado.png" HeightRequest="40" WidthRequest="40" Margin="0,10,10,0" />
+
+                                <!-- Información de teléfono -->
+                                <StackLayout>
+                                    <Label Text="Número de teléfono" TextColor="#999999" FontSize="18" FontAttributes="Bold" />
+                                    <Label HorizontalTextAlignment="Center" Text="+51 999 999 999" TextColor="#999999" FontSize="14" />
+                                </StackLayout>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                                <!-- Imagen de correo -->
+                                <Image Source="certificado.png" HeightRequest="40" WidthRequest="40" Margin="0,10,10,0" />
+
+                                <!-- Información de correo -->
+                                <StackLayout>
+                                    <Label Text="Correo electrónico" TextColor="#999999" FontSize="18" FontAttributes="Bold" />
+                                    <Label HorizontalTextAlignment="Center" Text="funerals@gmail.com" TextColor="#999999" FontSize="14" />
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+                
+                <!--Formualrio-->
+                <ScrollView>
+                    <StackLayout BackgroundColor="#FFFFFF" Padding="20">
+                        <!-- Campo de correo electrónico -->
+                        <Entry Placeholder="Tu correo electrónico" Margin="0,0,0,20"/>
+
+                        <!-- Campo de número de identidad -->
+                        <Entry Placeholder="Tu número de identidad" Margin="0,0,0,20" />
+
+                        <!-- Campo de número de teléfono -->
+                        <Entry Placeholder="Tu número telefónico" Margin="0,0,0,20"/>
+
+                        <!-- Campo de descripción -->
+                        <Editor Placeholder="Descripción" HeightRequest="100" Margin="0,0,0,20"/>
+
+                        <!-- Botón de enviar mensaje -->
+                        <Button Text="Enviar mensaje" BackgroundColor="#052D43" HorizontalOptions="Center" Margin="0,0,0,20" />
+                    </StackLayout>
+                </ScrollView>
+                
+                <!--Footer final-->
+                <StackLayout>
+                    <!-- Contenido del footer -->
+                    <StackLayout BackgroundColor="#052D43" Padding="20">
+                        <!-- Logotipo -->
+                        <Image Source="logo.png" BackgroundColor="#052D43"/>
+
+                        <!-- Descripción -->
+                        <Label TextColor="White" Text="Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue."
+               FontSize="14"
+               Margin="0,10,0,0" />
+                    </StackLayout>
+
+                    <!-- Enlaces útiles -->
+                    <StackLayout BackgroundColor="#052D43" Padding="20">
+                        <Label TextColor="White" Text="Enlaces útiles" FontSize="16" FontAttributes="Bold" Margin="0,0,0,10" />
+                        <StackLayout>
+                            <Label  TextColor="White" Text="• Inicio" Margin="0,0,0,5" />
+                            <Label TextColor="White" Text="• Sobre nosotros" Margin="0,0,0,5" />
+                            <Label  TextColor="White" Text="• Servicios" Margin="0,0,0,5" />
+                            <Label TextColor="White"  Text="• Términos de servicio" Margin="0,0,0,5" />
+                            <Label  TextColor="White" Text="• Política de privacidad" Margin="0,0,0,5" />
+                        </StackLayout>
+                    </StackLayout>
+
+                    <!-- Información de contacto -->
+                    <StackLayout BackgroundColor="#052D43" Padding="20">
+                        <Label TextColor="White" Text="Contáctenos" FontSize="16" FontAttributes="Bold" Margin="0,0,0,10" />
+                        <Label TextColor="White" Text="A108 Adam Street" Margin="0,0,0,5" />
+                        <Label TextColor="White" Text="New York, NY 535022" Margin="0,0,0,5" />
+                        <Label TextColor="White"  Text="United States" Margin="0,0,0,5" />
+                        <Label TextColor="White" Text="Teléfono: +51 999 999 999" Margin="0,0,0,5" />
+                        <Label TextColor="White" Text="Correo electrónico: funerals@gmail.com" Margin="0,0,0,30" />
+                        <!-- Redes sociales -->
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="certificado.png" HeightRequest="30" WidthRequest="30" Margin="0,0,10,0" />
+                            <Image Source="certificado.png" HeightRequest="30" WidthRequest="30" Margin="0,0,10,0" />
+                            <Image Source="certificado.png" HeightRequest="30" WidthRequest="30" Margin="0,0,10,0" />
+                            <Image Source="certificado.png" HeightRequest="30" WidthRequest="30" Margin="0,0,10,0" />
+                        </StackLayout>
+                    </StackLayout>
+
+                    <!-- Derechos de autor -->
+                    <StackLayout BackgroundColor="#343a40" Padding="10">
+                        <Label Text="© Derechos de autor Funerals. Reservados todos los derechos" TextColor="White" HorizontalOptions="Center" />
+                        <Label Text="Diseñada con Ingenio DAA" TextColor="White" HorizontalOptions="Center" />
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+
+
+        </Grid>
+
+
+    </ScrollView>
+
+</ContentPage>
